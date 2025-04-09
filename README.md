@@ -1,23 +1,23 @@
 
 # SWtools 
 
-`SWtools.py` is a Python module containing data structures and algorithms,
-allowing a user to conveniently calculate solitary-wave solutions for a general
+`SWtools.py` is a Python module containing data structures and algorithms that
+allow a user to conveniently calculate solitary-wave solutions for a general
 nonlinear Schrödinger-type wave equation.
 
-
-In this regard, it provides an extendible framework for iterative methods that allow a user
-to solve two variants of the associated nonlinear eigenvalue problem (NEVP):
+In this regard, it provides an extendible framework for iterative methods that
+allow a user to solve two variants of the associated nonlinear eigenvalue
+problem (NEVP):
 
 * A bare version of the NEVP;
-* A constraint version of the NEVP, wherein an additional normalization constraint for the solution is imposed.
+* A constraint version of the NEVP wherein an additional normalization constraint for the solution is imposed.
 
 
 To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. In particular, we provide a verification test based on a known
-analytical solution for a higher oder nonliear Schrödinger equation, studied in
-the literature.
+analytical solution for a higher order nonliear Schrödinger equation, studied
+in the literature.
 
 
 ## Prerequisites
