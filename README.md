@@ -45,7 +45,7 @@ the repository as
   [GNLStools](https://github.com/omelchert/GNLStools.git), allowing a user to
   study the propagation dynamics of the obtained solutions. An example using
   `SWtools` in conjunction with `py-fmas` is included under
-  `SWtools\results\numExp06_HONSE_FMAS`.
+  `results\numExp06_HONSE_FMAS`.
 
 
 ## License 
