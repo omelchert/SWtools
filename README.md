@@ -20,6 +20,10 @@ analytical solution for a higher order nonliear Schrödinger equation, studied
 in the literature.
 
 
+## Documentation
+
+<a href="https://omelchert.github.io//SWtools/doc/html/SWtools.html">Online documentation</a>
+
 ## Prerequisites
 
 `SWtools` is developed under python3 (version 3.9.7) and requires the
