@@ -31,14 +31,14 @@ class SRM2D(IterBase):
         self.gam = 1.5
 
 
-    def _N(self, U):
+    def functional_N(self, U):
         return np.sum(np.abs(U)**2)*self.dV
 
-    def _H(self, U):
+    def functional_H(self, U):
         xi, Lk, F, dV = self.xi, self.Lk, self.F, self.dV
         return np.real(np.sum( np.conj(U)*IFT(Lk*FT(U)) + F(np.abs(U)**2, xi)*np.abs(U)**2)*dV)
 
-    def _singleIteration(self, U, N, H, kap):
+    def singleUpdate(self, U, N, H, kap):
         # -- STRIP SELF KEYWORD
         xi, Lk, F, gam, dV = self.xi, self.Lk, self.F, self.gam, self.dV
         # -- USEFUL FUNCTIONS AND ABBREVIATIONS 

@@ -34,3 +34,5 @@ results = {
     'acc_list': myS.acc_list,
 }
 np.savez_compressed('./res_2DNSE_SRM2D_kap%lf'%(kap), **results)
+
+myS.show()
