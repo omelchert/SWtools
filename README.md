@@ -19,11 +19,6 @@ results. In particular, we provide a verification test based on a known
 analytical solution for a higher order nonliear Schrödinger equation, studied
 in the literature.
 
-
-## Documentation
-
-<a href="https://omelchert.github.io//SWtools/doc/html/SWtools.html">Online documentation</a>
-
 ## Prerequisites
 
 `SWtools` is developed under python3 (version 3.9.7) and requires the
@@ -46,7 +41,7 @@ stepsize z-propagation algorithms. An example that uses `SWtools` in
 conjunction with `py-fmas` is included in the repository.
 
 
-## Availability of the software
+## Installation 
 
 The `SWtools` module presented here is derived from our research software and
 is meant to work as a (system-)local software tool. There is no need to install
@@ -57,7 +52,17 @@ of the repository, e.g. via
 ``$ git clone https://github.com/omelchert/SWtools``
 
 
-## Further informaion
+## Documentation
+
+- **Source:** <https://github.com/omelchert/py-fmas>
+
+- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
+
+<a href="https://omelchert.github.io//SWtools/doc/html/SWtools.html">Online documentation</a>
+
+
+## Further information
+
 
 The `GNLStools' software package is described in 
 
