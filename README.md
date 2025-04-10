@@ -21,47 +21,34 @@ in the literature.
 
 ## Prerequisites
 
-`SWtools` is developed under python3 (version 3.9.7) and requires the
-functionality of 
+`SWtools` is developed under python3 (version 3.9.7) and requires
 
 * numpy (1.21.2)
 * scipy (1.7.0)
-
-Further, the figure generation scripts included with the examples require the
-functionality of
-
 * matplotlib (3.4.3)
 
-`SWtools` can be used as an extension module for
-[py-fmas](https://github.com/omelchert/py-fmas) and
-[GNLStools](https://github.com/omelchert/GNLStools.git), allowing a user to
-take advantage of data structures and functions that permit pulse propagation
-simulations for various nonlinear wave equations via fixed as well as variable
-stepsize z-propagation algorithms. An example that uses `SWtools` in
-conjunction with `py-fmas` is included in the repository.
 
 
 ## Installation 
 
-The `SWtools` module presented here is derived from our research software and
-is meant to work as a (system-)local software tool. There is no need to install
-it once you got a local
-[clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-of the repository, e.g. via
+The software can be installed by
+[cloning](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+the repository in the following way
 
 ``$ git clone https://github.com/omelchert/SWtools``
 
 
-## Documentation
-
-- **Source:** <https://github.com/omelchert/py-fmas>
-
-- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
-
-<a href="https://omelchert.github.io//SWtools/doc/html/SWtools.html">Online documentation</a>
-
-
 ## Further information
+
+- **Source:** <https://github.com/omelchert/SWtools>
+- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
+- **Extendibility:** `SWtools` can be used as an extension module for
+  [py-fmas](https://github.com/omelchert/py-fmas) and
+  [GNLStools](https://github.com/omelchert/GNLStools.git), allowing a user to
+  take advantage of data structures and functions that permit pulse propagation
+  simulations for various nonlinear wave equations via fixed as well as
+  variable stepsize z-propagation algorithms. An example that uses `SWtools` in
+  conjunction with `py-fmas` is included in the repository.
 
 
 The `GNLStools' software package is described in 
