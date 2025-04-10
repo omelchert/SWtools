@@ -19,16 +19,13 @@ analytical solution for a higher order nonliear Schrödinger equation, studied
 in the literature.
 
 
-## Prerequisites
+## Installation 
 
 `SWtools` is developed under python3 (version 3.9.7) and requires
 
 * numpy (1.21.2)
 * scipy (1.7.0)
 * matplotlib (3.4.3)
-
-
-## Installation 
 
 The software can be installed by
 [cloning](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
