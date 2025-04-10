@@ -1,7 +1,7 @@
 
 # SWtools 
 
-`SWtools.py` is a Python module containing data structures and algorithms that
+`SWtools` is a Python module containing data structures and algorithms that
 allow a user to conveniently calculate solitary-wave solutions for a general
 nonlinear Schrödinger-type wave equation.
 
