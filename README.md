@@ -69,11 +69,3 @@ the repository as
 
 This project is licensed under the MIT License - see the
 [LICENSE.md](LICENSE.md) file for details.
-
-
-## Acknowledgments
-
-This work received funding from the Deutsche Forschungsgemeinschaft  (DFG)
-under Germany’s Excellence Strategy within the Cluster of Excellence PhoenixD
-(Photonics, Optics, and Engineering – Innovation Across Disciplines) (EXC 2122,
-projectID 390833453).
