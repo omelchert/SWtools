@@ -13,9 +13,9 @@ solve two variants of the associated nonlinear eigenvalue problem (NEVP):
 
 To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
-results. In particular, we provide a verification test based on a known
-analytical solution for a higher order nonliear Schrödinger equation, studied
-in the literature [(Karlsson and Höök, Optics Letters 104 (1994)
+results. We also provide a verification test based on a known analytical
+solution for a higher order nonlinear Schrödinger equation, studied in the
+literature [(Karlsson and Höök, Optics Letters 104 (1994)
 303)](https://doi.org/10.1364/NLGWP.1993.TuB.15).
 
 
