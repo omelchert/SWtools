@@ -16,7 +16,7 @@ To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. We also provide a verification test based on a known analytical
 solution for a higher order nonlinear Schrödinger equation, studied in the
-literature.
+literature (see the documentation below).
 
 
 ## Installation 
