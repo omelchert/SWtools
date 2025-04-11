@@ -38,7 +38,7 @@ the repository as
 
 - **Source:** <https://github.com/omelchert/SWtools>
 
-- **Documentation:** ARXIV ARTICLE FOLLOWING SOON.
+- **Documentation:** arxive article following soon. 
 
 - **Reference manual:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
 
