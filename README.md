@@ -42,14 +42,18 @@ the repository as
 
 - **Reference manual:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
 
-- **Extendibility 1:** `SWtools` can be used as an extension module for
-  [py-fmas](https://github.com/omelchert/py-fmas) and
-  [GNLStools](https://github.com/omelchert/GNLStools.git), allowing a user to
+- **Software integration:** `SWtools` can be used as an extension module for
+  [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) [(Melchert and Demircan,
+  Comp. Phys. Commun. 273 (2022)
+  108257)](https://doi.org/10.1016/j.cpc.2021.108257) and
+  [GNLStools](https://github.com/ElsevierSoftwareX/SOFTX-D-22-00165) [Melchert
+  and Demirca, SoftwareX 20 (2022)
+  101232](https://doi.org/10.1016/j.softx.2022.101232), allowing a user to
   study the propagation dynamics of the obtained solutions. An example using
   `SWtools` in conjunction with `py-fmas` is included under
   `results\numExp06_HONSE_FMAS`.
 
-- **Extendibility 2:** While the documented codebase assumes a one-dimenaional
+- **Extendibility:** While the documented codebase assumes a one-dimenaional
   (d=1) transverse coordinate, extension to higher dimensions is straight
   forward. An example implementing a spectral renormalization method for d=2 is
   included under `results\numExp07_2DNSE_SRM2D`. 
