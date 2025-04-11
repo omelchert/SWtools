@@ -19,21 +19,6 @@ literature ([Karlsson and Höök, Optics Letters 104 (1994)
 303](https://doi.org/10.1364/NLGWP.1993.TuB.15)).
 
 
-## Installation 
-
-`SWtools` is developed under python3 (version 3.9.7) and requires
-
-* numpy (1.21.2)
-* scipy (1.7.0)
-* matplotlib (3.4.3)
-
-The software can be installed by
-[cloning](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-the repository as
-
-``$ git clone https://github.com/omelchert/SWtools``
-
-
 ## Minimal example
 
 As a minimal example, we demonstrate a reproduction of the pure quartic soliton
@@ -60,6 +45,21 @@ myS.show()
 Upon termination, the script procudes the figure
 
 ![alt text](https://github.com/omelchert/SWtools/blob/main/results/numExp08_minimalExample/fig_minimalExample_v1.png)
+
+
+## Installation 
+
+`SWtools` is developed under python3 (version 3.9.7) and requires
+
+* numpy (1.21.2)
+* scipy (1.7.0)
+* matplotlib (3.4.3)
+
+The software can be installed by
+[cloning](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+the repository as
+
+``$ git clone https://github.com/omelchert/SWtools``
 
 
 ## Further information
