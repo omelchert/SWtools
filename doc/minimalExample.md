@@ -12,7 +12,7 @@ from SWtools import SRM
 
 myS = SRM(
   np.linspace(-10, 10, 2**10),  # COMPUTATIONAL DOMAIN
-  (0, 0, 0, -0.0917),           # NEVP - COEFFS. LINEAR PART
+  (0, 0, 0, -0.0917),           # NEVP - COEFFICIENTS OF LINEAR PART
   lambda I, xi: 4.07*I,         # NEVP - NONLINEAR FUNCTIONAL
   verbose = True                # NEVP - LIST DETAILS DURING ITERATION
 )
