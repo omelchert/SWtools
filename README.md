@@ -36,27 +36,30 @@ the repository as
 
 ## Minimal example
 
+As a minimal example, we demonstrate a reproduction of the pure quartic soliton
+shown in figure 2a of [Widjaja et al., Phys. Rev. A, 104 (2021)
+043526](https://doi.org/10.1103/PhysRevA.104.043526), using the spectral
+renormalization method (SRM) implemented in `SWtools`. A python script that
+facilitates this is
+
 ```Python
 import numpy as np
 from SWtools import SRM
 
-# -- SETUP AND INITIALIZATION 
-xi = np.linspace(-10, 10, 2**10)
-# ... NEVP INGREDIENTS 
-cL = (0., 0., 0., -2.2/24)
-#cL = (-0.07, -0.2/2, 0.2/6, -1./24)
-F = lambda I, xi: 4.07*I
-kap = 1.76
-# ... INITIAL CONDITION 
-U0 = np.exp(-xi**2)
-# ... SRM INSTANTIATION
-myS = SRM(xi, cL, F, verbose=True)
+xi = np.linspace(-10, 10, 2**10)    # SET COMPUTATIONAL DOMAIN
+cL = (0., 0., 0., -2.2/24)          # NEVP: LINEAR PART 
+F = lambda I, xi: 4.07*I            # NEVP: NONLINEAR FUNCTIONAL
+kap = 1.76                          # EIGENVALUE OF SOUGHT-FOR SOLUTION
+U0 = np.exp(-xi**2)                 # INITIAL CONDITION
+myS = SRM(xi, cL, F)                # SRM INSTANTIATION
 
-# -- SRM SOLUTION PROCEDURE
 myS.solve(U0, kap)
-
-myS.show('fig_minimalExample_v1.png')
+myS.show()
 ```
+
+Upon termination, the script procudes the figure
+
+![alt text](https://github.com/omelchert/SWtools/blob/main/results/numExp08_minimalExample/fig_minimalExample_v1.png)
 
 
 ## Further information
