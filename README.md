@@ -1,5 +1,6 @@
-
 # SWtools 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 `SWtools` is a Python module containing data structures and algorithms that
 allow a user to conveniently calculate solitary-wave solutions for a general
