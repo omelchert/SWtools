@@ -44,6 +44,8 @@ the repository as
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
+- **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
+
 - **Software integration:** `SWtools` can be used as an extension module for
   [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) (see [Melchert and Demircan,
   Comp. Phys. Commun. 273 (2022)
