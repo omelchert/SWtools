@@ -5,9 +5,8 @@
 allow a user to conveniently calculate solitary-wave solutions for a general
 nonlinear Schrödinger-type wave equation.
 
-In this regard, it provides an extendible framework for iterative methods that
-allow a user to solve two variants of the associated nonlinear eigenvalue
-problem (NEVP):
+It provides an extendible framework for iterative methods that allow a user to
+solve two variants of the associated nonlinear eigenvalue problem (NEVP):
 
 * A bare version of the NEVP;
 * A constraint version of the NEVP wherein an additional normalization constraint for the solution is imposed.
@@ -16,7 +15,8 @@ To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. In particular, we provide a verification test based on a known
 analytical solution for a higher order nonliear Schrödinger equation, studied
-in the literature.
+in the literature [(Karlsson and Höök, Optics Letters 104 (1994)
+303)](https://doi.org/10.1364/NLGWP.1993.TuB.15).
 
 
 ## Installation 
@@ -38,14 +38,21 @@ the repository as
 
 - **Source:** <https://github.com/omelchert/SWtools>
 
-- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
+- **Documentation:** ARXIV ARTICLE FOLLOWING SOON.
 
-- **Extendibility:** `SWtools` can be used as an extension module for
+- **Reference manual:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
+
+- **Extendibility 1:** `SWtools` can be used as an extension module for
   [py-fmas](https://github.com/omelchert/py-fmas) and
   [GNLStools](https://github.com/omelchert/GNLStools.git), allowing a user to
   study the propagation dynamics of the obtained solutions. An example using
   `SWtools` in conjunction with `py-fmas` is included under
   `results\numExp06_HONSE_FMAS`.
+
+- **Extendibility 2:** While the documented codebase assumes a one-dimenaional
+  (d=1) transverse coordinate, the extension to higher dimensions is straight
+  forward. An example implementing a spectral renormalization method for d=2 is
+  included under `results\numExp07_2DNSE_SRM2D`. 
 
 
 ## License 
