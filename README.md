@@ -15,8 +15,8 @@ To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. We also provide a verification test based on a known analytical
 solution for a higher order nonlinear Schrödinger equation, studied in the
-literature [(Karlsson and Höök, Optics Letters 104 (1994)
-303)](https://doi.org/10.1364/NLGWP.1993.TuB.15).
+literature ([Karlsson and Höök, Optics Letters 104 (1994)
+303](https://doi.org/10.1364/NLGWP.1993.TuB.15)).
 
 
 ## Installation 
@@ -43,12 +43,12 @@ the repository as
 - **Reference manual:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
 
 - **Software integration:** `SWtools` can be used as an extension module for
-  [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) [(Melchert and Demircan,
+  [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) (see [Melchert and Demircan,
   Comp. Phys. Commun. 273 (2022)
-  108257)](https://doi.org/10.1016/j.cpc.2021.108257) and
-  [GNLStools](https://github.com/ElsevierSoftwareX/SOFTX-D-22-00165) [Melchert
-  and Demirca, SoftwareX 20 (2022)
-  101232](https://doi.org/10.1016/j.softx.2022.101232), allowing a user to
+  108257](https://doi.org/10.1016/j.cpc.2021.108257)) and
+  [GNLStools](https://github.com/ElsevierSoftwareX/SOFTX-D-22-00165) (see
+  [Melchert and Demircan, SoftwareX 20 (2022)
+  101232](https://doi.org/10.1016/j.softx.2022.101232)), allowing a user to
   study the propagation dynamics of the obtained solutions. An example using
   `SWtools` in conjunction with `py-fmas` is included under
   `results\numExp06_HONSE_FMAS`.
