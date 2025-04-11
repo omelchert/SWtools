@@ -38,15 +38,15 @@ the repository as
 
 ## Further information
 
-- **Source:** <https://github.com/omelchert/SWtools>
+- **Source:** [https://github.com/omelchert/SWtools/src/SWtools.py](src/SWtools.py)
+
+- **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
 - **Documentation:** arxive article following soon. 
 
 - **Reference manual:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
 
 - **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
-
-- **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
 - **Software integration:** `SWtools` can be used as an extension module for
   [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) (see [Melchert and Demircan,
