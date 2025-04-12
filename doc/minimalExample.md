@@ -62,6 +62,6 @@ Iter 000023: H = 1.564803, N = 0.889093, K = 1.760000, acc = 5.043E-13
 
 Upon termination, it procudes the figure
 
-| ![alt text](https://github.com/omelchert/SWtools/blob/main/results/numExp08_minimalExample/fig_minimalExample_v1.png)
+| ![alt text](https://github.com/omelchert/SWtools/blob/main/results/numExp08_minimalExample/fig_minimalExample_v1.png) |
 |:--:|
-|*Solution of the considered NEVP.  Left panel: Solution U. Shown are the real part (Re[U]), imaginary part (Im[U]), and modulus (|U|) of the solution.  Right panel: Variation of the accuracy upon iteration.*|
+| *Solution of the considered NEVP.  Left panel: Solution U. Shown are the real part (Re[U]), imaginary part (Im[U]), and modulus (|U|) of the solution.  Right panel: Variation of the accuracy upon iteration.* |
