@@ -41,9 +41,9 @@ the repository as
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
-- **Documentation:** arxive article following soon. 
+- **Reference manual:** TBW 
 
-- **Reference manual:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
+- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
 
 - **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
 
