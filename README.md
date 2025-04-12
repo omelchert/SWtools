@@ -56,12 +56,12 @@ the repository as
   101232](https://doi.org/10.1016/j.softx.2022.101232)), allowing a user to
   study the propagation dynamics of the obtained solutions. An example using
   `SWtools` in conjunction with `py-fmas` is included under
-  `results\numExp06_HONSE_FMAS`.
+  `results/numExp06_HONSE_FMAS`.
 
 - **Extendibility:** While the documented codebase assumes a one-dimenaional
   (d=1) transverse coordinate, extension to higher dimensions is straight
   forward. An example implementing a spectral renormalization method for d=2 is
-  included under `results\numExp07_2DNSE_SRM2D`. 
+  included under `results/numExp07_2DNSE_SRM2D`. 
 
 
 ## License 
