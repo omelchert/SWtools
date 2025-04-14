@@ -11,7 +11,7 @@ It provides an extendible framework for iterative methods that allow a user to
 solve two variants of the associated nonlinear eigenvalue problem (NEVP):
 
 * A bare version of the NEVP, where a solution with given eigenvalue is computed;
-* A constraint version of the NEVP with a <em>a priori</em> unknown eigenvalye, where a solution with given norm is computed.
+* A constraint version of the NEVP with <em>a priori</em> unknown eigenvalye, where a solution with given norm is computed.
 
 To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
@@ -56,8 +56,10 @@ the repository as
 
 - **Extendibility:** While the documented codebase assumes a one-dimenaional
   (d=1) transverse coordinate, extension to higher dimensions is straight
-  forward. An example implementing a spectral renormalization method for d=2 is
-  included under `results/numExp07_2DNSE_SRM2D`. 
+  forward. An example of an extension module
+  [SWtools_SRM2D](<https://omelchert.github.io//SWtools/doc/html/SWtools_SRM2D.html>),
+  implementing a spectral renormalization method for d=2 is included under
+  `results/numExp07_2DNSE_SRM2D`. 
 
 
 ## License 

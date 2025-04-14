@@ -1,4 +1,4 @@
-import sys; sys.path.append('../../src/')
+import sys
 import numpy as np
 from SWtools_SRM2D import SRM2D
 
