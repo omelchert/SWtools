@@ -1,4 +1,3 @@
-import sys; sys.path.append('../../src/')
 import numpy as np
 from SWtools import NSOM
 
