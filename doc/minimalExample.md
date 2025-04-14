@@ -1,9 +1,7 @@
 ## Minimal example
 
 As a minimal example, we demonstrate a reproduction of the pure quartic soliton
-shown in figure 2a of [Widjaja et al., <em>Absence of Galilean invariance for
-pure-quartic solitons</em>, Phys. Rev. A <strong>104</strong> (2021)
-043526](https://doi.org/10.1103/PhysRevA.104.043526), using the spectral
+shown in figure 2a of (Widjaja et al., [2021](https://doi.org/10.1103/PhysRevA.104.043526)), using the spectral
 renormalization method (SRM) implemented in `SWtools`. A python script that
 facilitates this is
 
