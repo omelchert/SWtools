@@ -11,7 +11,7 @@ It provides an extendible framework for iterative methods that allow a user to
 solve two variants of the associated nonlinear eigenvalue problem (NEVP):
 
 * A bare version of the NEVP, where a solution with given eigenvalue is computed;
-* A constraint version of the NEVP with <em>a priori</em> unknown eigenvalye, where a solution with given norm is computed.
+* A constraint version of the NEVP with <em>a priori</em> unknown eigenvalue, where a solution with given norm is computed.
 
 To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
@@ -59,8 +59,6 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 
 - **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>
 
-- **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
-
 - **Software integration:** `SWtools` can be used as an extension module for
   [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) (Melchert and Demircan, [2022](https://doi.org/10.1016/j.cpc.2021.108257)) and
   [GNLStools](https://github.com/ElsevierSoftwareX/SOFTX-D-22-00165) (Melchert and Demircan, [2022](https://doi.org/10.1016/j.softx.2022.101232)), allowing a user to
@@ -75,6 +73,8 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
   implementing a spectral renormalization method for d=2 by subclassing
   `SWtools` base class `IterBase` is included with the example under
   `results/numExp07_2DNSE_SRM2D`. 
+
+- **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
 
 
 ## License 
