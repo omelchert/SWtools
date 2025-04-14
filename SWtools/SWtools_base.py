@@ -184,7 +184,7 @@ class IterBase(object):
             if ortho_set:
                 U = self.orthogonalize(U, ortho_set)
             # ... UPDATE SOLUTION 
-            U_new = self.singleUpdate(U, N, H, dum)
+            U_new = self.singleUpdate(U, N, H, dum, **kwargs)
             # ... ROOT-MEAN SQUARED DEVIATION W.R.T. PREVIOUS STEP 
             acc = acc_fun(xi, U, U_new)
             # ... ADVANCE UPDATE TO NEXT ITERATION STEP 
@@ -277,7 +277,7 @@ class IterBase(object):
         """
         raise NotImplementedError
 
-    def singleUpdate(self, U, N, H, dum):
+    def singleUpdate(self, U, N, H, dum, **kwargs):
         """Single update of the solution.
 
         Parameters
@@ -380,7 +380,7 @@ class SRM(IterBase):
         xi, Lw, F = self.xi, self.Lw, self.F
         return np.real(np.trapz( np.conj(U)*IFT(Lw*FT(U)) + F(np.abs(U)**2, xi)*np.abs(U)**2, x=xi, axis=-1))
 
-    def singleUpdate(self, U, N, H, kap):
+    def singleUpdate(self, U, N, H, kap, **kwargs):
         """Single iteration step of the SRM.
 
         Implements a single step of the d=1 SRM, thoroughly detailed in
@@ -548,7 +548,7 @@ class NSOM(IterBase):
         HN = np.trapz(F(np.abs(U)**2, xi)*np.abs(U)**2, x=xi)
         return np.real(HL + HN)
 
-    def singleUpdate(self, U, N, H, N0):
+    def singleUpdate(self, U, N, H, N0, **kwargs):
         """Single iteration step of the NSOM.
 
         Implements a single step of a nonlinear successive overrelaxation

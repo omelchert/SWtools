@@ -103,7 +103,7 @@ class SRM2D(IterBase):
         xi, Lk, F, dV = self.xi, self.Lk, self.F, self.dV
         return np.real(np.sum( np.conj(U)*IFT(Lk*FT(U)) + F(np.abs(U)**2, xi)*np.abs(U)**2)*dV)
 
-    def singleUpdate(self, U, N, H, kap):
+    def singleUpdate(self, U, N, H, kap, **kwargs):
         """Single iteration step of the d=2 SRM.
 
         Implements a single step of the d=2 SRM following [M2004,A2005].
