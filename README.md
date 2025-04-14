@@ -51,7 +51,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-module"
 
 ## Further information
 
-- **Source:** [https://github.com/omelchert/SWtools/src/SWtools.py](src/SWtools.py)
+- **Source:** [https://github.com/omelchert/SWtools/SWtools/SWtools_base.py](SWtools/SWtools_base.py)
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
