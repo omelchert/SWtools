@@ -57,7 +57,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-module"
 
 - **Reference manual:** TBW 
 
-- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools.html>
+- **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>
 
 - **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
 
@@ -71,7 +71,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-module"
 - **Extendibility:** While the documented codebase assumes a one-dimenaional
   (d=1) transverse coordinate, extension to higher dimensions is straight
   forward. An example of an extension module
-  [SWtools_SRM2D](<https://omelchert.github.io//SWtools/doc/html/SWtools_SRM2D.html>),
+  [SWtools_ext_SRM2D](<https://omelchert.github.io//SWtools/doc/html/SWtools_ext_SRM2D.html>),
   implementing a spectral renormalization method for d=2 by subclassing
   `SWtools` base class `IterBase` is included with the example under
   `results/numExp07_2DNSE_SRM2D`. 
