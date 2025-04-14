@@ -1,9 +1,4 @@
-""" SWtools.py
-
-AUTHOR: O. Melchert
-DATE: 2023-2025
-"""
-import sys, os; sys.path.append('../../src/')
+import sys, os
 import numpy as np
 import numpy.fft as nfft
 from SWtools import SRM
