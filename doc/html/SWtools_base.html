@@ -307,7 +307,7 @@ accuracy upon iteration.</p>
             if ortho_set:
                 U = self.orthogonalize(U, ortho_set)
             # ... UPDATE SOLUTION 
-            U_new = self.singleUpdate(U, N, H, dum)
+            U_new = self.singleUpdate(U, N, H, dum, **kwargs)
             # ... ROOT-MEAN SQUARED DEVIATION W.R.T. PREVIOUS STEP 
             acc = acc_fun(xi, U, U_new)
             # ... ADVANCE UPDATE TO NEXT ITERATION STEP 
@@ -400,7 +400,7 @@ accuracy upon iteration.</p>
         &#34;&#34;&#34;
         raise NotImplementedError
 
-    def singleUpdate(self, U, N, H, dum):
+    def singleUpdate(self, U, N, H, dum, **kwargs):
         &#34;&#34;&#34;Single update of the solution.
 
         Parameters
@@ -681,14 +681,14 @@ functions in the set <code>ortho_set</code>.</p>
 </dl></div>
 </dd>
 <dt id="SWtools_base.IterBase.singleUpdate"><code class="name flex">
-<span>def <span class="ident">singleUpdate</span></span>(<span>self, U, N, H, dum)</span>
+<span>def <span class="ident">singleUpdate</span></span>(<span>self, U, N, H, dum, **kwargs)</span>
 </code></dt>
 <dd>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def singleUpdate(self, U, N, H, dum):
+<pre><code class="python">def singleUpdate(self, U, N, H, dum, **kwargs):
     &#34;&#34;&#34;Single update of the solution.
 
     Parameters
@@ -792,7 +792,7 @@ constraint (in case of NSOM).</dd>
         if ortho_set:
             U = self.orthogonalize(U, ortho_set)
         # ... UPDATE SOLUTION 
-        U_new = self.singleUpdate(U, N, H, dum)
+        U_new = self.singleUpdate(U, N, H, dum, **kwargs)
         # ... ROOT-MEAN SQUARED DEVIATION W.R.T. PREVIOUS STEP 
         acc = acc_fun(xi, U, U_new)
         # ... ADVANCE UPDATE TO NEXT ITERATION STEP 
@@ -957,7 +957,7 @@ successfully.</dd>
         HN = np.trapz(F(np.abs(U)**2, xi)*np.abs(U)**2, x=xi)
         return np.real(HL + HN)
 
-    def singleUpdate(self, U, N, H, N0):
+    def singleUpdate(self, U, N, H, N0, **kwargs):
         &#34;&#34;&#34;Single iteration step of the NSOM.
 
         Implements a single step of a nonlinear successive overrelaxation
@@ -1199,14 +1199,14 @@ accuracy upon iteration.</p>
 </dl></div>
 </dd>
 <dt id="SWtools_base.NSOM.singleUpdate"><code class="name flex">
-<span>def <span class="ident">singleUpdate</span></span>(<span>self, U, N, H, N0)</span>
+<span>def <span class="ident">singleUpdate</span></span>(<span>self, U, N, H, N0, **kwargs)</span>
 </code></dt>
 <dd>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def singleUpdate(self, U, N, H, N0):
+<pre><code class="python">def singleUpdate(self, U, N, H, N0, **kwargs):
     &#34;&#34;&#34;Single iteration step of the NSOM.
 
     Implements a single step of a nonlinear successive overrelaxation
@@ -1402,7 +1402,7 @@ constraint (in case of NSOM).</dd>
         xi, Lw, F = self.xi, self.Lw, self.F
         return np.real(np.trapz( np.conj(U)*IFT(Lw*FT(U)) + F(np.abs(U)**2, xi)*np.abs(U)**2, x=xi, axis=-1))
 
-    def singleUpdate(self, U, N, H, kap):
+    def singleUpdate(self, U, N, H, kap, **kwargs):
         &#34;&#34;&#34;Single iteration step of the SRM.
 
         Implements a single step of the d=1 SRM, thoroughly detailed in
@@ -1630,14 +1630,14 @@ accuracy upon iteration.</p>
 </dl></div>
 </dd>
 <dt id="SWtools_base.SRM.singleUpdate"><code class="name flex">
-<span>def <span class="ident">singleUpdate</span></span>(<span>self, U, N, H, kap)</span>
+<span>def <span class="ident">singleUpdate</span></span>(<span>self, U, N, H, kap, **kwargs)</span>
 </code></dt>
 <dd>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def singleUpdate(self, U, N, H, kap):
+<pre><code class="python">def singleUpdate(self, U, N, H, kap, **kwargs):
     &#34;&#34;&#34;Single iteration step of the SRM.
 
     Implements a single step of the d=1 SRM, thoroughly detailed in
