@@ -37,7 +37,7 @@ the repository as
 Within a Python script, add the path to your Python path and import `SWtools`:
 
 ```Python
-import sys; sys.path.append('/path/to/SWtools')
+import sys; sys.path.append('/path/to/SWtools-module')
 import SWtools
 
 ```
@@ -45,7 +45,7 @@ import SWtools
 As an alternative, working on the commandline, add the path by amending `.bash_profile` by the line
 
 ```bash 
-export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools"
+export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-module"
 ```
 
 
@@ -72,7 +72,8 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools"
   (d=1) transverse coordinate, extension to higher dimensions is straight
   forward. An example of an extension module
   [SWtools_SRM2D](<https://omelchert.github.io//SWtools/doc/html/SWtools_SRM2D.html>),
-  implementing a spectral renormalization method for d=2 is included under
+  implementing a spectral renormalization method for d=2 by subclassing
+  `SWtools` base class `IterBase` is included with the example under
   `results/numExp07_2DNSE_SRM2D`. 
 
 
