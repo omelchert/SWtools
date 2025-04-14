@@ -1,3 +1,8 @@
+"""
+
+Note: this file is added to the SWtools package as `SWtools_ext_SRM2D.py`
+
+"""
 import sys; sys.path.append('../../src/')
 import numpy as np
 import matplotlib.pyplot as plt
