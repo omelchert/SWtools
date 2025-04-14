@@ -48,9 +48,7 @@ the repository as
 - **References:** [https://github.com/omelchert/SWtools/blob/main/doc/references.md](doc/references.md)
 
 - **Software integration:** `SWtools` can be used as an extension module for
-  [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) (see [Melchert and Demircan,
-  Comp. Phys. Commun. <strong>273</strong> (2022)
-  108257](https://doi.org/10.1016/j.cpc.2021.108257)) and
+  [py-fmas](https://doi.org/10.17632/7s2cv9kjfs.1) (Melchert and Demircan, [2022](https://doi.org/10.1016/j.cpc.2021.108257)) and
   [GNLStools](https://github.com/ElsevierSoftwareX/SOFTX-D-22-00165) (see
   [Melchert and Demircan, SoftwareX <strong>20</strong> (2022)
   101232](https://doi.org/10.1016/j.softx.2022.101232)), allowing a user to
