@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-from SWtools_SRM2D import SRM2D
+from SWtools import SRM2D
 
 # -- SETUP AND INITIALIZATION 
 x1 = np.linspace(-20, 20, 2**8)
