@@ -1,4 +1,3 @@
-import sys; sys.path.append("../../src/"); sys.path.append("../../../py-fmas/")
 import numpy as np
 from SWtools import SRM, FT, IFT, FTFREQ
 from fmas.solver import LEM
