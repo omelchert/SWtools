@@ -3,7 +3,7 @@
 AUTHOR: O. Melchert
 DATE: 2023-2025
 """
-import os, sys; sys.path.append('../../src/')
+import os, sys
 import numpy as np
 from SWtools import NSOM
 
