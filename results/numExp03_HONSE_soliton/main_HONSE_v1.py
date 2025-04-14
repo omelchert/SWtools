@@ -1,4 +1,3 @@
-import sys; sys.path.append('../../src/')
 import numpy as np
 from numpy.fft import fftfreq, ifft
 from SWtools import SRM
@@ -27,5 +26,3 @@ kc = np.trapz(k*Ik, x=k)/np.trapz(Ik, x=k)
 print(f"max(U) = {np.max(np.abs(U)):5.4F}")
 print(f"N[U]   = {N:5.4F}")
 print(f"kc     = {kc:5.4F}")
-
-myS.show()
