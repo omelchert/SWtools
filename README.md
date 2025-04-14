@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](https://docs.python.org/3/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-`SWtools` is a Python module containing data structures and algorithms that
+`SWtools` is a Python package containing data structures and algorithms that
 allow a user to conveniently calculate solitary-wave solutions for a general
 nonlinear Schrödinger-type wave equation.
 
@@ -37,7 +37,7 @@ the repository as
 Within a Python script, add the path to your Python path and import `SWtools`:
 
 ```Python
-import sys; sys.path.append('/path/to/SWtools-module')
+import sys; sys.path.append('/path/to/SWtools-package')
 import SWtools
 
 ```
@@ -45,13 +45,13 @@ import SWtools
 As an alternative, working on the commandline, add the path by amending `.bash_profile` by the line
 
 ```bash 
-export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-module"
+export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 ```
 
 
 ## Further information
 
-- **Source:** [https://github.com/omelchert/SWtools/SWtools/SWtools_base.py](SWtools/SWtools_base.py)
+- **Source:** [https://github.com/omelchert/SWtools/SWtools](SWtools/)
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
