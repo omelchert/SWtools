@@ -34,6 +34,20 @@ the repository as
 
 ``$ git clone https://github.com/omelchert/SWtools``
 
+Within a Python script, add the path to your Python path and import `SWtools`:
+
+```Python
+import sys; sys.path.append('/path/to/SWtools')
+import SWtools
+
+```
+
+As an alternative, working on the commandline, add the path by amending `.bash_profile` by the line
+
+```bash 
+export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools"
+```
+
 
 ## Further information
 
