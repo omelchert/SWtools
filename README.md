@@ -70,7 +70,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 
 - **Extendibility:** While the documented codebase assumes a one-dimenaional
   (d=1) transverse coordinate, extension to higher dimensions is straight
-  forward. An example of an extension module [SWtools_ext_SRM2D](<https://omelchert.github.io/SWtools/SWtools/SWtools_ext_SRM2D.py>)
+  forward. An example of an extension module [SWtools_ext_SRM2D](SWtools/SWtools_ext_SRM2D.py)
   (documented [here](<https://omelchert.github.io//SWtools/doc/html/SWtools_ext_SRM2D.html>)),
   implementing a spectral renormalization method for d=2 by subclassing
   `SWtools` base class `IterBase` is included with the example under
