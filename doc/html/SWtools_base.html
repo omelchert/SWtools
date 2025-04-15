@@ -891,8 +891,8 @@ successfully.</dd>
             arguments are the squared magnitute of U (`I`), and the transverse
             coordinate xi (`xi`).
         ORP : float, optional
-            Overrelaxation parameter (default: 1). Numerical value needs to
-            satisfy ORP&lt;2.  If ORP&lt;1, the method works by underrelaxing.
+            Relaxation factor (default: 1). Needs to satisfy 0 &lt; ORP &lt; 2. If
+            ORP&lt;1, the method works by underrelaxation.
         tol : float, optional
             Iteration is stopped if the accuracy falls below this tolerance
             threshold (default: 1e-12).
@@ -1056,9 +1056,8 @@ transverse coordinate xi.</p>
 arguments are the squared magnitute of U (<code>I</code>), and the transverse
 coordinate xi (<code>xi</code>).</dd>
 <dt><strong><code>ORP</code></strong> :&ensp;<code>float</code>, optional</dt>
-<dd>Overrelaxation parameter (default: 1). Numerical value needs to
-satisfy ORP&lt;2.
-If ORP&lt;1, the method works by underrelaxing.</dd>
+<dd>Relaxation factor (default: 1). Needs to satisfy 0 &lt; ORP &lt; 2. If
+ORP&lt;1, the method works by underrelaxation.</dd>
 <dt><strong><code>tol</code></strong> :&ensp;<code>float</code>, optional</dt>
 <dd>Iteration is stopped if the accuracy falls below this tolerance
 threshold (default: 1e-12).</dd>
@@ -1333,7 +1332,7 @@ constraint (in case of NSOM).</dd>
     Note
     ----
     This implementation addresses the case of a one-dimensional (d=1)
-    transverse coordinate xi.
+    transverse coordinate xi and nonlinear functional quadratic in U.
     &#34;&#34;&#34;
     def __init__(self, xi, cL, F, tol=1e-12, maxiter=10000, nskip=1, verbose=False):
         &#34;&#34;&#34;Initialization of the iteration base class.
@@ -1407,6 +1406,11 @@ constraint (in case of NSOM).</dd>
 
         Implements a single step of the d=1 SRM, thoroughly detailed in
         [A2003,M2004,A2005,F2008,A2009].
+
+        Note
+        ----
+        This implementation addresses the case of a one-dimensional (d=1)
+        transverse coordinate xi and nonlinear functional quadratic in U.
 
         References
         ----------
@@ -1483,7 +1487,7 @@ constraint (in case of NSOM).</dd>
 <div class="desc"><p>Spectral renormalization method (SRM).</p>
 <h2 id="note">Note</h2>
 <p>This implementation addresses the case of a one-dimensional (d=1)
-transverse coordinate xi.</p>
+transverse coordinate xi and nonlinear functional quadratic in U.</p>
 <p>Initialization of the iteration base class.</p>
 <h2 id="parameters">Parameters</h2>
 <dl>
@@ -1643,6 +1647,11 @@ accuracy upon iteration.</p>
     Implements a single step of the d=1 SRM, thoroughly detailed in
     [A2003,M2004,A2005,F2008,A2009].
 
+    Note
+    ----
+    This implementation addresses the case of a one-dimensional (d=1)
+    transverse coordinate xi and nonlinear functional quadratic in U.
+
     References
     ----------
     [A2003] M. J. Ablowitz, Z. H. Musslimani, Discrete spatial solitons in
@@ -1699,6 +1708,9 @@ accuracy upon iteration.</p>
 <div class="desc"><p>Single iteration step of the SRM.</p>
 <p>Implements a single step of the d=1 SRM, thoroughly detailed in
 [A2003,M2004,A2005,F2008,A2009].</p>
+<h2 id="note">Note</h2>
+<p>This implementation addresses the case of a one-dimensional (d=1)
+transverse coordinate xi and nonlinear functional quadratic in U.</p>
 <h2 id="references">References</h2>
 <p>[A2003] M. J. Ablowitz, Z. H. Musslimani, Discrete spatial solitons in
 a diffraction-managed nonlinear waveguide array: a unified approach,
