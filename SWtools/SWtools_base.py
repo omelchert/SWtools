@@ -487,8 +487,8 @@ class NSOM(IterBase):
             arguments are the squared magnitute of U (`I`), and the transverse
             coordinate xi (`xi`).
         ORP : float, optional
-            Relaxation factor (default: 1). Needs to satisfy 0 < ORP < 2. If
-            ORP<1, the method works by underrelaxation.
+            Overrelaxation parameter (default: 1). Needs to satisfy 0 < ORP <
+            2. If ORP<1, the method works by underrelaxation.
         tol : float, optional
             Iteration is stopped if the accuracy falls below this tolerance
             threshold (default: 1e-12).
