@@ -311,7 +311,7 @@ class SRM(IterBase):
     Note
     ----
     This implementation addresses the case of a one-dimensional (d=1)
-    transverse coordinate xi.
+    transverse coordinate xi and nonlinear functional quadratic in U.
     """
     def __init__(self, xi, cL, F, tol=1e-12, maxiter=10000, nskip=1, verbose=False):
         """Initialization of the iteration base class.
@@ -385,6 +385,11 @@ class SRM(IterBase):
 
         Implements a single step of the d=1 SRM, thoroughly detailed in
         [A2003,M2004,A2005,F2008,A2009].
+
+        Note
+        ----
+        This implementation addresses the case of a one-dimensional (d=1)
+        transverse coordinate xi and nonlinear functional quadratic in U.
 
         References
         ----------
