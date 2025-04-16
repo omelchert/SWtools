@@ -2,13 +2,18 @@
 
 This module demonstrates an instance of a well-dressed repulsive-core soliton,
 discussed in the context of a cubic-quintic nonlinear Schrödinger equation
-(CQNSE) in [1]_.
+(CQNSE) in [1]_. This example is discussed as SWtools use-case in [2]_.
 
 References
 ----------
+
 .. [1] V. N. Serkin, T. L. Belyaeva, Well-dressed repulsive-core solitons and
     nonlinear optics of nuclear reactions, Optics Communications 549 (2023)
     129831, https://doi.org/10.1016/j.optcom.2023.129831.
+
+.. [2] O. Melchert, A. Demircan, https://doi.org/10.48550/arXiv.2504.10623.
+
+.. codeauthor:: Oliver Melchert <melchert@iqo.uni-hannover.de>
 """
 import numpy as np
 from SWtools import NSOM
@@ -52,5 +57,4 @@ res = {
     'alpha': alpha
 }
 np.savez_compressed('res.npz',**res)
-
 print(myS); myS.show()
