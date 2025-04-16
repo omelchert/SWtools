@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](https://docs.python.org/3/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2504.10623-b31b1b.svg)](https://doi.org/10.48550/arXiv.2504.10623)
 
 `SWtools` is a Python package containing data structures and algorithms that
 allow a user to conveniently calculate solitary-wave solutions for a general
@@ -17,7 +18,7 @@ To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. We also provide a verification test based on a known analytical
 solution for a higher order nonlinear Schrödinger equation, studied in the
-literature (see the documentation below).
+literature (see the reference manual below).
 
 
 ## Installation 
@@ -55,7 +56,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
-- **Reference manual:** TBW 
+- **Reference manual:** <https://doi.org/10.48550/arXiv.2504.10623>
 
 - **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>
 
