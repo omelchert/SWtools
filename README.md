@@ -20,6 +20,12 @@ results. We also provide a verification test based on a known analytical
 solution for a higher order nonlinear Schrödinger equation, studied in the
 literature (see the reference manual below).
 
+The examples provided with `SWtools` include: Bose-Einstein condensate (BEC)
+solutions for a Gross-Pitaevskii equation (GPE), traveling solitary wave
+solutions of a higher-order nonlinear Schrödinger equation (HONSE), nonlinear
+bound-states in a nonlinear Schrödinger equation (NSE) with periodic nonlinear
+microstructure, excited-states for a GPE, solitary waves in a cubic-quintic
+NSE, solitons in a saturable NSE, and solitary waves in a two-dimensional NSE.
 
 ## Installation 
 
