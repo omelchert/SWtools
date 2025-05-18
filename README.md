@@ -85,7 +85,8 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 
 - **Code Ocean:** A code ocean compute capsule demonstrating the calculation of
   a soliton solution for a higher-order nonlinear Schrödinger equation via the
-  spectral renormalization method is available under [TBW](). 
+  spectral renormalization method is available under the DOI
+  [10.24433/CO.5557616.v1](https://doi.org/10.24433/CO.5557616.v1) (provisional DOI). 
 
 
 ## License 
