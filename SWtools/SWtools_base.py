@@ -171,6 +171,7 @@ class IterBase(object):
         self._clean_up()
 
         # -- PREPARE/EVALUATE TRIAL SOLUTION
+        U = U.astype(np.complex128)
         N = self.functional_N(U)
         H = self.functional_H(U)
         # -- INITIALIZE ITERATION SCHEME
