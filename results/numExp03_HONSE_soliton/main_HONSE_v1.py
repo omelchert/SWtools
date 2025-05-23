@@ -36,6 +36,6 @@ nevp.solve(U0, kap, acc_fun = acc)
 k = fftfreq(xi.size, d=xi[1]-xi[0])*2*np.pi     # ... FREQUENCY SAMPLES
 Ik = np.abs(ifft(nevp.U))**2                    # ... SPECTRUM
 kc = np.trapz(k*Ik, x=k)/np.trapz(Ik, x=k)      # ... CENTER FREQUENCY
-print(f"max(U) = {np.max(nevp.U):5.4F}")
-print(f"kc     = {kc:5.4F}")
+print(f"max(U) = {np.max(np.abs(nevp.U))}")
+print(f"kc     = {kc}")
 print(nevp); nevp.show()
