@@ -19,20 +19,21 @@ D 217 (2006) 31, http://dx.doi.org/10.1016/j.physd.2006.03.009.
 import numpy as np
 from SWtools import SRM
 
-# -- SETUP AND INITIALIZATION 
-xi = np.linspace(-20, 20, 2**12)
-# ... NEVP INGREDIENTS 
-cL = (0, -1., 0, 0)
-F = lambda I, xi:\
-  (1 - 0.8*np.cos(4*np.pi*xi))*I
-kap = 1.0
-# ... SRM INSTANTIATION
-myS = SRM(xi, cL, F)
+m = lambda xi: 0.8*np.cos(4*np.pi*xi)       # ... PERIODIC MICRUSTRUCTURE
+kap = 1.0                                   # ... EIGENVALUE
+
+nevp = SRM(                                 # ... SRM INSTANTIATION
+  np.linspace(-20, 20, 2**12),
+  (0, -1., 0, 0),
+  lambda I, xi: (1 - m(xi))*I,
+  verbose=True
+)
 
 # -- SRM SOLUTION PROCEDURE
-myS.solve(np.exp(-xi**2), kap)
+nevp.solve(np.exp(-nevp.xi**2), kap)
 
 # -- POSTPROCESSING
-print(f"# max(U) = {np.max(myS.U):4.3F}")
-print(f"# U(0)   = {myS.U[xi.size//2]:4.3F}")
-print(myS); myS.show()
+xi, U = nevp.xi, nevp.U
+print(f"# max(U) = {np.max(U):4.3F}")
+print(f"# U(0)   = {U[xi.size//2]:4.3F}")
+print(nevp); nevp.show()
