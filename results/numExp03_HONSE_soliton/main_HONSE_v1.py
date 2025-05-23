@@ -21,25 +21,21 @@ from numpy.fft import fftfreq, ifft
 from SWtools import SRM
 
 # -- SETUP AND INITIALIZATION 
-xi = np.linspace(-20, 20, 2**10)
-# ... NEVP INGREDIENTS 
-cL = (-0.07, -0.1, 0.0333, -0.0417)
-F = lambda I, xi: I
-kap = 0.867
-# ... INITIAL CONDITION 
-U0 = np.exp(-xi**2)
-# ... SRM INSTANTIATION
-myS = SRM(xi, cL, F, verbose=True)
-# ... CUSTOM ACCURACY
-acc = lambda xi, U, V: np.max(np.abs(U-V))
+xi = np.linspace(-20, 20, 2**10)                # ... COMPUTATIONAL DOMAIN
+cL = (-0.07, -0.1, 0.0333, -0.0417)             # ... LINEAR COEFFICIENTS
+F = lambda I, xi: I                             # ... NONLINEAR FUNCTIONAL
+kap = 0.867                                     # ... EIGENVALUE
+U0 = np.exp(-xi**2)                             # ... INITIAL CONDITION
+acc = lambda xi, U, V: np.max(np.abs(U-V))      # ... CUSTOM ACCURACY
+nevp = SRM(xi, cL, F, verbose=True)             # ... SRM INSTANTIATION
 
 # -- SRM SOLUTION PROCEDURE
-myS.solve(U0, kap, acc_fun = acc)
+nevp.solve(U0, kap, acc_fun = acc)
 
 # -- POSTPROCESSING
-k = fftfreq(xi.size, d=xi[1]-xi[0])*2*np.pi
-Ik = np.abs(ifft(myS.U))**2
-kc = np.trapz(k*Ik, x=k)/np.trapz(Ik, x=k)
-print(f"max(U) = {np.max(myS.U):5.4F}")
+k = fftfreq(xi.size, d=xi[1]-xi[0])*2*np.pi     # ... FREQUENCY SAMPLES
+Ik = np.abs(ifft(nevp.U))**2                    # ... SPECTRUM
+kc = np.trapz(k*Ik, x=k)/np.trapz(Ik, x=k)      # ... CENTER FREQUENCY
+print(f"max(U) = {np.max(nevp.U):5.4F}")
 print(f"kc     = {kc:5.4F}")
-print(myS); myS.show()
+print(nevp); nevp.show()
