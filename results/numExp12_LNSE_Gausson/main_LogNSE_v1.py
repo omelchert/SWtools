@@ -2,7 +2,7 @@
 
 This module demonstrates an instance of a gausson for a one-dimensional
 nonlinear Schrödinger equation with a logarithmic nonlinearity, modeled after
-[1]_.  This example is discussed as SWtools use-case in [2]_.
+[1]_, [2]_.  This example is discussed as SWtools use-case in [3]_.
 
 References
 ----------
@@ -10,7 +10,11 @@ References
 .. [1] I. Bialynicki-Birula, J. Mycielski, Nonlinear Wave Mechanics, Annals of
 Physics 100 (1976) 62, https://doi.org/10.1016/0003-4916(76)90057-9.
 
-.. [2] O. Melchert, A. Demircan, https://doi.org/10.48550/arXiv.2504.10623.
+.. [2] A. Biswas, D. Milovic, Optical solitons with log-law nonlinearity,
+Commun. Nonlinear Sci. Numer. Simulat. 15 (2010) 3763,
+http://dx.doi.org/10.1016/j.cnsns.2010.01.022.
+
+.. [3] O. Melchert, A. Demircan, https://doi.org/10.48550/arXiv.2504.10623.
 
 .. codeauthor:: Oliver Melchert <melchert@iqo.uni-hannover.de>
 """
@@ -30,7 +34,8 @@ nevp = NSOM(
   lambda I, xi: beta*np.log(I),
   # ... OVERRELAXATION PARAMETER
   ORP = 1.7,
-  verbose = False
+  nskip=10,
+  verbose = True
 )
 
 # -- SOLUTION PROCEDURE
@@ -38,15 +43,17 @@ nevp.solve(np.exp(-nevp.xi**2), N0)
 
 # -- POSTPROCESSING
 xi, U, kap = nevp.xi, nevp.U, nevp.kap
-
 # ... COMPARE TO EXACT RESULTS 
 xi0 = np.trapz(xi*np.abs(U)**2, x=xi)
+# ... GAUSSON SOLUTION TAKEN FROM [1]_
 UG = np.exp(-(xi-xi0)**2/2)/np.pi**0.25
+# ... EIGENVALUE FOR N0=1 AND BETA=1 TAKEN FROM [2]_
 kapG = 2*np.log(np.pi**(-0.25))-1
+# ... RELATIVE ERROR WRT EXACT GAUSSON
 err = np.sqrt(np.trapz(np.abs(U-UG)**2, x=xi))
 print(f"U-err = {err}")
 print(f"kap-err = {np.abs(kap-kapG)}")
-
+print(nevp); nevp.show()
 # ... SAVE DATA
 res = {
     'xi': xi,
@@ -62,7 +69,4 @@ res = {
     'acc_list': nevp.acc_list,
     'iter_list': nevp.iter_list
 }
-
 np.savez_compressed('./res_LNSE_NSOM_N0%lf_beta%lf'%(N0,beta), **res)
-
-print(nevp); nevp.show()
