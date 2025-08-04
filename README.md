@@ -14,6 +14,10 @@ solve two variants of the associated nonlinear eigenvalue problem (NEVP):
 * A bare version of the NEVP, where a solution with given eigenvalue is computed;
 * A constraint version of the NEVP with <em>a priori</em> unknown eigenvalue, where a solution with given norm is computed.
 
+It further includes functions determining the linearized eigenspectrum of the
+solitary-waves for selected models, aimed at unveiling the existence and
+properties of their internal modes.
+
 To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. We also provide a verification test based on a known analytical
