@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.6">
+<title>SWtools_ext_LE API documentation</title>
+<meta name="description" content="SWtools_ext_LE_v2.py …">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source > summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible;min-width:max-content}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin:1em 0}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+/* Collapse source docstrings */
+setTimeout(() => {
+[...document.querySelectorAll('.hljs.language-python > .hljs-string')]
+.filter(el => el.innerHTML.length > 200 && ['"""', "'''"].includes(el.innerHTML.substring(0, 3)))
+.forEach(el => {
+let d = document.createElement('details');
+d.classList.add('hljs-string');
+d.innerHTML = '<summary>"""</summary>' + el.innerHTML.substring(3);
+el.replaceWith(d);
+});
+}, 100);
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>SWtools_ext_LE</code></h1>
+</header>
+<section id="section-intro">
+<p>SWtools_ext_LE_v2.py</p>
+<p>SWtools extension module implementing functions for the linear stability
+analysis of generalized nonlinear Schrödinger equations.
+The analysis proceeds
+by calculating the linearized eigenspectrum (LE), describing small-amplitude
+perturbations atop a solitary wave.</p>
+<h2 id="note">Note</h2>
+<p>This module implements two methods for solving for the LE of genarlized
+nonlinear Schrödinger equations with different restictions:</p>
+<p>LE_GNSE: this function is tailored towards a GNSE with with generic nonlinear
+functional and linear differential operator of second order in the transverse
+coordinate.</p>
+<p>LE_HONSE: this function is tailored towards a GNSE with cubic nonlinear
+functional and linear differential operator including dispersion of orders two,
+three and four.</p>
+<div class="admonition codeauthor">
+<p class="admonition-title">Codeauthor:&ensp;Oliver Melchert <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#108;&#99;&#104;&#101;&#114;&#116;&#64;&#105;&#113;&#111;&#46;&#117;&#110;&#105;&#45;&#104;&#97;&#110;&#110;&#111;&#118;&#101;&#114;&#46;&#100;&#101;">&#109;&#101;&#108;&#99;&#104;&#101;&#114;&#116;&#64;&#105;&#113;&#111;&#46;&#117;&#110;&#105;&#45;&#104;&#97;&#110;&#110;&#111;&#118;&#101;&#114;&#46;&#100;&#101;</a></p>
+</div>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="SWtools_ext_LE.LE_GNSE"><code class="name flex">
+<span>def <span class="ident">LE_GNSE</span></span>(<span>xi, U, kap, c2, F_fun, F1_fun)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def LE_GNSE(xi, U, kap, c2, F_fun, F1_fun):
+    &#34;&#34;&#34;Linearized eigenspectrum for the GNSE.
+
+    Solves the eigenvalue problem for the linear stability matrix of a GNSE
+    with generic nonlinear functional and linear differential operator of
+    second order in the transverse coordinate [P1998,K1998].
+
+    Note
+    ----
+    Assumes that the soliton solution is given by an even, positive,
+    single-humped function U, see [P1998].
+
+    References
+    ----------
+    [P1998] D. E. Pelinovsky, Y. S. Kivshar, V. V. Afanasjev, Internal modes of
+    envelope solitons, Physica D 116 (1) (1998) 121–142,
+    https://doi.org/10.1016/S0167-2789(98)80010-9.
+
+    [K1998] Y. S. Kivshar, D. E. Pelinovsky, T. Cretegny, M. Peyrard, Internal
+    modes of solitary waves, Phys. Rev. Lett. 80 (1998) 5032,
+    https://doi.org/10.1103/PhysRevLett.80.5032.
+
+    Parameters
+    ----------
+    xi : array_like
+        Disrete transverse coordinates.
+    U : array_like
+        Solitary wave solution.
+    kap : float
+        Solitary wave wavenumber.
+    c2 : float
+        Constant coefficient of the linear differential operator part
+    F_fun : function
+        Nonlinear functional.
+    F1_fun : function
+        Derivative of the nonlinear functional.
+    &#34;&#34;&#34;
+
+    # -- COMPOSE MATRIX DETERMINING EVP FOR THE PERTURBATION MODES
+    # ... PREPARE COEFFICIENTS FOR FINITE-DIFFERENCE MATRIX 
+    dxi = xi[1]-xi[0]
+    dxi2= dxi**2
+    I = np.abs(U)**2
+
+    # ... SET UP DIAGONALS 
+    D0 = -(30/12)*c2/dxi2*np.ones(xi.size)
+    D1 =  (16/12)*c2/dxi2*np.ones(xi.size-1)
+    D2 = -( 1/12)*c2/dxi2*np.ones(xi.size-2)
+
+    # ... SET UP SPARSE FINITE DIFFERENCE MATRICES
+    Z0 = diags([np.zeros_like(U)], [0]).toarray()
+    L0 = diags([D0 + kap - F_fun(I), D1, D2, D1, D2], [0,-1,-2,1,2]).toarray()
+    L1 = diags([D0 + kap - F_fun(I) - 2*I*F1_fun(I), D1, D2, D1, D2], [0,-1,-2,1,2]).toarray()
+
+    # ... SET UP AUXILIARY MATRIX
+    M = np.block([
+      [ Z0, L0],
+      [ L1, Z0]
+    ])
+
+    # ... SOLVE EIGENVALUE PROBLEM
+    e_, v_ = eig(M)
+
+    # -- FILTER FOR EIGENVALUES WITHIN GAP OF CONTINUOUS SPECTRUM
+    # ... DETERMINE ONSET OF CONTINUOUS-WAVE BANDS
+    Lam_max = kap
+    # ... FILTER EIGENVALUES AND EIGENFUNCTIONS
+    Lam_ = 1j*e_
+    Lam = Lam_[ np.abs(np.imag(Lam_))&lt;kap]
+    v = v_[:, np.abs(np.imag(Lam_))&lt;kap]
+    # ... SEPARATE THE MODES AND MAKE INDEXING MORE INTUITIVE
+    f = np.asarray([v[:xi.size,n] for n in range(Lam.size)])
+    g = np.asarray([v[xi.size:,n] for n in range(Lam.size)])
+    # ... GET ORDER FOR INCREASING MAGNITUDE OF IMAGINARY PART
+    idx_srt = np.flip(np.argsort(np.abs(np.imag(Lam))))
+
+    return kap, Lam[idx_srt], f[idx_srt], g[idx_srt]</code></pre>
+</details>
+<div class="desc"><p>Linearized eigenspectrum for the GNSE.</p>
+<p>Solves the eigenvalue problem for the linear stability matrix of a GNSE
+with generic nonlinear functional and linear differential operator of
+second order in the transverse coordinate [P1998,K1998].</p>
+<h2 id="note">Note</h2>
+<p>Assumes that the soliton solution is given by an even, positive,
+single-humped function U, see [P1998].</p>
+<h2 id="references">References</h2>
+<p>[P1998] D. E. Pelinovsky, Y. S. Kivshar, V. V. Afanasjev, Internal modes of
+envelope solitons, Physica D 116 (1) (1998) 121–142,
+<a href="https://doi.org/10.1016/S0167-2789(98)80010-9.">https://doi.org/10.1016/S0167-2789(98)80010-9.</a></p>
+<p>[K1998] Y. S. Kivshar, D. E. Pelinovsky, T. Cretegny, M. Peyrard, Internal
+modes of solitary waves, Phys. Rev. Lett. 80 (1998) 5032,
+<a href="https://doi.org/10.1103/PhysRevLett.80.5032.">https://doi.org/10.1103/PhysRevLett.80.5032.</a></p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>xi</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Disrete transverse coordinates.</dd>
+<dt><strong><code>U</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Solitary wave solution.</dd>
+<dt><strong><code>kap</code></strong> :&ensp;<code>float</code></dt>
+<dd>Solitary wave wavenumber.</dd>
+<dt><strong><code>c2</code></strong> :&ensp;<code>float</code></dt>
+<dd>Constant coefficient of the linear differential operator part</dd>
+<dt><strong><code>F_fun</code></strong> :&ensp;<code>function</code></dt>
+<dd>Nonlinear functional.</dd>
+<dt><strong><code>F1_fun</code></strong> :&ensp;<code>function</code></dt>
+<dd>Derivative of the nonlinear functional.</dd>
+</dl></div>
+</dd>
+<dt id="SWtools_ext_LE.LE_HONSE"><code class="name flex">
+<span>def <span class="ident">LE_HONSE</span></span>(<span>xi, U, kap, coeffs)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def LE_HONSE(xi, U, kap, coeffs):
+    &#34;&#34;&#34;Linearized eigenspectrum for a HONSE.
+
+    Solves the eigenvalue problem for the linear stability matrix of a GNSE
+    with cubic nonlinear functional and linear differential operator including
+    dispersion of orders two, three and four [T2020,M2024].
+
+    Note
+    ----
+    The linear stability matrix for this model is generally non-selfadjoint and
+    does not simply reduce to that of [P1998] (with higher orders of the linear
+    derivatives included).
+
+    References
+    ----------
+    [T2020] K. K. K. Tam, T. J. Alexander, A. Blanco-Redondo, C. M. de Sterke,
+    Generalized dispersion Kerr solitons, Phys. Rev. A 101 (2020) 043822,
+    https://doi.org/10.1103/PhysRevA.101.043822.
+
+    [M2024] O. Melchert, A. Demircan,
+    https://doi.org/10.48550/arXiv.2504.10623.
+
+    [P1998] D. E. Pelinovsky, Y. S. Kivshar, V. V. Afanasjev, Internal modes of
+    envelope solitons, Physica D 116 (1) (1998) 121–142,
+    https://doi.org/10.1016/S0167-2789(98)80010-9.
+
+    Parameters
+    ----------
+    xi : array_like
+        Disrete transverse coordinates.
+    U : array_like
+        Solitary wave solution.
+    kap : float
+        Solitary wave wavenumber.
+    coeffs : array_like
+        Scaled dispersion parameters coeffs = [c0,c1,c2,c3,c4] defining the
+        propagation constant (c_n = beta_n/n!).
+    &#34;&#34;&#34;
+
+    # -- COMPOSE MATRIX DETERMINING EVP FOR THE PERTURBATION MODES
+    # ... PREPARE COEFFICIENTS FOR FINITE-DIFFERENCE MATRIX 
+    dxi = xi[1]-xi[0]
+    c2, c3, c4 = coeffs
+    sc2, sc3, sc4 = c2/dxi**2, c3/dxi**3, c4/dxi**4
+    I = np.abs(U)**2
+
+    # ... SET UP DIAGONALS 
+    D3m = (               1j*( 1/8)*sc3 - ( 1/6)*sc4)*np.ones(xi.size-3)
+    D2m = ( ( 1/12)*sc2 - 1j*sc3        +      2*sc4)*np.ones(xi.size-2)
+    D1m = (-(16/12)*sc2 + 1j*(13/8)*sc3 - (13/2)*sc4)*np.ones(xi.size-1)
+    D0  = ( (30/12)*sc2                 + (28/3)*sc4)*np.ones(xi.size)
+    D1p = (-(16/12)*sc2 - (13/8)*1j*sc3 - (13/2)*sc4)*np.ones(xi.size-1)
+    D2p = ( ( 1/12)*sc2 + 1j*sc3        +      2*sc4)*np.ones(xi.size-2)
+    D3p = (              -1j*( 1/8)*sc3 - ( 1/6)*sc4)*np.ones(xi.size-3)
+
+    # ... SET UP CORRESPONDING SPARSE FINITE DIFFERENCE MATRICES
+    M11 = diags([D0 + (2*np.abs(U)**2-kap), D1p, D2p, D3p, D1m, D2m, D3m], [0,-1,-2,-3,1,2,3]).toarray()
+    M12 = diags([U*U],[0]).toarray()
+
+    # ... SET UP AUXILIARY MATRIX
+    M = np.block([
+      [ M11,  M12],
+      [-np.conj(M12), -np.conj(M11)]
+    ])
+
+    # ... SOLVE EIGENVALUE PROBLEM
+    e_, v_ = eig(M)
+
+    # -- FILTER FOR EIGENVALUES WITHIN GAP OF CONTINUOUS SPECTRUM
+    # ... DETERMINE ONSET OF CONTINUOUS-WAVE BANDS
+    w = FTFREQ(xi.size, d=xi[1]-xi[0])*2*np.pi
+    bw  = c2*w**2 + c3*w**3 + c4*w**4
+    bw_max = np.max(bw)
+    Lam_max = kap - bw_max
+    # ... FILTER EIGENVALUES AND EIGENFUNCTIONS
+    Lam_ = 1j*e_
+    Lam = Lam_[ np.abs(np.imag(Lam_))&lt;Lam_max]
+    v = v_[:, np.abs(np.imag(Lam_))&lt;Lam_max]
+    # ... SEPARATE THE MODES AND MAKE INDEXING MORE INTUITIVE
+    f = np.asarray([v[:xi.size,n] for n in range(Lam.size)])
+    g = np.asarray([v[xi.size:,n] for n in range(Lam.size)])
+    # ... GET ORDER FOR INCREASING MAGNITUDE OF IMAGINARY PART
+    idx_srt = np.flip(np.argsort(np.abs(np.imag(Lam))))
+
+    return Lam_max, Lam[idx_srt], f[idx_srt], g[idx_srt]</code></pre>
+</details>
+<div class="desc"><p>Linearized eigenspectrum for a HONSE.</p>
+<p>Solves the eigenvalue problem for the linear stability matrix of a GNSE
+with cubic nonlinear functional and linear differential operator including
+dispersion of orders two, three and four [T2020,M2024].</p>
+<h2 id="note">Note</h2>
+<p>The linear stability matrix for this model is generally non-selfadjoint and
+does not simply reduce to that of [P1998] (with higher orders of the linear
+derivatives included).</p>
+<h2 id="references">References</h2>
+<p>[T2020] K. K. K. Tam, T. J. Alexander, A. Blanco-Redondo, C. M. de Sterke,
+Generalized dispersion Kerr solitons, Phys. Rev. A 101 (2020) 043822,
+<a href="https://doi.org/10.1103/PhysRevA.101.043822.">https://doi.org/10.1103/PhysRevA.101.043822.</a></p>
+<p>[M2024] O. Melchert, A. Demircan,
+<a href="https://doi.org/10.48550/arXiv.2504.10623.">https://doi.org/10.48550/arXiv.2504.10623.</a></p>
+<p>[P1998] D. E. Pelinovsky, Y. S. Kivshar, V. V. Afanasjev, Internal modes of
+envelope solitons, Physica D 116 (1) (1998) 121–142,
+<a href="https://doi.org/10.1016/S0167-2789(98)80010-9.">https://doi.org/10.1016/S0167-2789(98)80010-9.</a></p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>xi</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Disrete transverse coordinates.</dd>
+<dt><strong><code>U</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Solitary wave solution.</dd>
+<dt><strong><code>kap</code></strong> :&ensp;<code>float</code></dt>
+<dd>Solitary wave wavenumber.</dd>
+<dt><strong><code>coeffs</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Scaled dispersion parameters coeffs = [c0,c1,c2,c3,c4] defining the
+propagation constant (c_n = beta_n/n!).</dd>
+</dl></div>
+</dd>
+<dt id="SWtools_ext_LE.LE_dump"><code class="name flex">
+<span>def <span class="ident">LE_dump</span></span>(<span>Lam_max, Lam, f, g)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def LE_dump(Lam_max, Lam, f, g):
+    &#34;&#34;&#34;List discrete eigenvalues.
+
+    Parameters
+    ----------
+    Lam_max : float
+        Continuum edge.
+    Lam : array_like
+        Complex-valued eigenvalues.
+    f, g : array_like
+        Complex-valued eigenfunctions.
+    &#34;&#34;&#34;
+    print(&#34;# -- DISCRETE EIGENSPECTRUM (SORTED)&#34;)
+    print(&#34;# -- CONTINUUM EDGE:&#34;, Lam_max)
+    for n in range(Lam.size):
+        LamR, LamI = np.real(Lam[n]), np.imag(Lam[n])
+        print(f&#34;n = {n}  Re[Lam_n] = {LamR:+6.5F}  Im[Lam_n] = {LamI:+6.5F}&#34;)</code></pre>
+</details>
+<div class="desc"><p>List discrete eigenvalues.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>Lam_max</code></strong> :&ensp;<code>float</code></dt>
+<dd>Continuum edge.</dd>
+<dt><strong><code>Lam</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Complex-valued eigenvalues.</dd>
+<dt><strong><code>f</code></strong>, <strong><code>g</code></strong> :&ensp;<code>array_like</code></dt>
+<dd>Complex-valued eigenfunctions.</dd>
+</dl></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul>
+<li><a href="#note">Note</a></li>
+</ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="SWtools_ext_LE.LE_GNSE" href="#SWtools_ext_LE.LE_GNSE">LE_GNSE</a></code></li>
+<li><code><a title="SWtools_ext_LE.LE_HONSE" href="#SWtools_ext_LE.LE_HONSE">LE_HONSE</a></code></li>
+<li><code><a title="SWtools_ext_LE.LE_dump" href="#SWtools_ext_LE.LE_dump">LE_dump</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.6</a>.</p>
+</footer>
+</body>
+</html>
