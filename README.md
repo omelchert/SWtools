@@ -60,7 +60,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 
 ## Module description
 
-Below we provide a list of all `SWtools` modules along with a short description.
+Below we provide a list of all `SWtools` modules along with a short description and a link to the respective source code and online-documentation.
 
 | **Module**                | **Description**                                 | **Links** |
 |:--------------------------|:------------------------------------------------|:----------|
