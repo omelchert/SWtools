@@ -64,9 +64,9 @@ Below we provide a list of all `SWtools` modules along with a short description.
 
 | **Module**                | **Description**                                 |
 |:--------------------------|:------------------------------------------------|
-| `SWtools_base.py`         | base classes and methods for 1D solitary waves ([src](SWtools/SWtools_base.py), [doc](<https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>)    |
-| `SWtools_ext_SRM2D.py`    | 2D spectral renormalization method ([src](SWtools/SWtools_ext_SRM2D.py), [doc](<https://omelchert.github.io//SWtools/doc/html/SWtools_ext_SRM2D.html>)    |
-| `SWtools_ext_LE.py`       | functions for calculating linear eigenspectra ([src](SWtools/SWtools_ext_LE.py), [doc](<https://omelchert.github.io//SWtools/doc/html/SWtools_ext_LE.html>)    |
+| `SWtools_base.py`         | base classes and methods for 1D solitary waves ([src](SWtools/SWtools_base.py), [doc](<https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>)) |
+| `SWtools_ext_SRM2D.py`    | 2D spectral renormalization method ([src](SWtools/SWtools_ext_SRM2D.py), [doc](<https://omelchert.github.io//SWtools/doc/html/SWtools_ext_SRM2D.html>))    |
+| `SWtools_ext_LE.py`       | functions for calculating linear eigenspectra ([src](SWtools/SWtools_ext_LE.py), [doc](<https://omelchert.github.io//SWtools/doc/html/SWtools_ext_LE.html>))    |
 
 
 ## Further information
