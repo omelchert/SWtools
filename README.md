@@ -14,10 +14,6 @@ solve two variants of the associated nonlinear eigenvalue problem (NEVP):
 * A bare version of the NEVP, where a solution with given eigenvalue is computed;
 * A constraint version of the NEVP with <em>a priori</em> unknown eigenvalue, where a solution with given norm is computed.
 
-It further includes functions determining the linearized eigenspectrum of the
-solitary-waves for selected models, aimed at unveiling the existence and
-properties of their internal modes.
-
 To facilitate progress of science, we include many examples and workflows that
 can help a user to quickly go from an idea to numerical experimentation to
 results. We also provide a verification test based on a known analytical
@@ -30,6 +26,9 @@ solutions of a higher-order nonlinear Schrödinger equation (HONSE), nonlinear
 bound-states in a nonlinear Schrödinger equation (NSE) with periodic nonlinear
 microstructure, excited-states for a GPE, solitary waves in a cubic-quintic
 NSE, solitons in a saturable NSE, and solitary waves in a two-dimensional NSE.
+It further includes functions determining the linearized eigenspectrum of the
+solitary-waves for selected models, aimed at unveiling the existence and
+properties of their internal modes.
 
 ## Installation 
 
@@ -58,6 +57,16 @@ As an alternative, working on the commandline, add the path by amending `.bash_p
 ```bash 
 export PYTHONPATH="${PYTHONPATH}:/path/to/SWtools-package"
 ```
+
+## Module description
+
+Below we provide a list of all `SWtools` modules along with a short description.
+
+| **Module**                | **Description**                                 |
+|:--------------------------|:------------------------------------------------|
+| `SWtools_base.py`         | base classes and methods for 1D solitary waves  |
+| `SWtools_ext_SRM2D.py`    | 2D spectral renormalization method              |
+| `SWtools_ext_LE.py`       | functions for calculating linear eigenspectra   |
 
 
 ## Further information
