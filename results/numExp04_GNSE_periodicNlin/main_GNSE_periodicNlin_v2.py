@@ -26,7 +26,7 @@ nevp = SRM(                                 # ... SRM INSTANTIATION
   np.linspace(-20, 20, 2**12),
   (0, -1., 0, 0),
   lambda I, xi: (1 - m(xi))*I,
-  verbose=True
+  spm=True
 )
 
 # -- SRM SOLUTION PROCEDURE

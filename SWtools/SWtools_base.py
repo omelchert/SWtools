@@ -314,7 +314,7 @@ class SRM(IterBase):
     This implementation addresses the case of a one-dimensional (d=1)
     transverse coordinate xi and nonlinear functional quadratic in U.
     """
-    def __init__(self, xi, cL, F, tol=1e-12, maxiter=10000, nskip=1, verbose=False):
+    def __init__(self, xi, cL, F, tol=1e-12, maxiter=10000, nskip=1, verbose=False, spm=False):
         """Initialization of the iteration base class.
 
         Parameters
@@ -336,11 +336,21 @@ class SRM(IterBase):
             Number of iterations to skip in between storing intermediate results (default: 1)
         verbose : bool
             Set to True to print details during iteration (default: False)
+        spm : bool
+            Set to True to enable a structure-preserving method for a GNSE with
+            nodeless, even, and real-valued solution.
+
+            Enabling this option requires some caution: intented for  GNSEs
+            with even and real solitons, it yields catastrophic results for
+            GNSEs with complex-valued, oscillating-tail solitons.
+
+
         """
         IterBase.__init__(self, xi, tol=tol, maxiter=maxiter, nskip=nskip, verbose=verbose)
         self.F = F
         self.Lw = self._set_Lk(xi, cL)
         self.gam = 1.5
+        self.spm = spm
 
     def _set_Lk(self, xi, coeffs):
         c1, c2, c3, c4 = coeffs
@@ -385,12 +395,15 @@ class SRM(IterBase):
         """Single iteration step of the SRM.
 
         Implements a single step of the d=1 SRM, thoroughly detailed in
-        [A2003,M2004,A2005,F2008,A2009].
+        [A2003,M2004,A2005,A2009].
 
         Note
         ----
         This implementation addresses the case of a one-dimensional (d=1)
         transverse coordinate xi and nonlinear functional quadratic in U.
+
+        If the boolean flag spm=True, the method implements the
+        structure-preserving add-on discussed in Appendix B of [F2008].
 
         References
         ----------
@@ -432,7 +445,7 @@ class SRM(IterBase):
             Updated solution.
         """
         # -- STRIP SELF KEYWORD
-        xi, Lw, F, gam = self.xi, self.Lw, self.F, self.gam
+        xi, Lw, F, gam, spm = self.xi, self.Lw, self.F, self.gam, self.spm
         # -- USEFUL FUNCTIONS AND ABBREVIATIONS 
         _IP = lambda f,g: np.trapz(np.conj(f)*g, x=xi)
 
@@ -442,6 +455,9 @@ class SRM(IterBase):
         # (2) RESCALE SOLUTION SO IT SATISFIES THE DESIRED INTEGRAL IDENTITY
         s_tmp = np.abs(_IP(U,U)/_IP(U,U_tmp))
         U_tmp *= s_tmp**gam
+        # (3) ENABLE STRUCTURE-PRESERVING ADD-ON FOR EVEN AND REAL SOLUTIONS
+        if spm:
+         U_tmp = np.abs(U_tmp)
 
         return U_tmp
 
