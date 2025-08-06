@@ -338,7 +338,7 @@ class SRM(IterBase):
             Set to True to print details during iteration (default: False)
         spm : bool
             Set to True to enable a structure-preserving method for a GNSE with
-            nodeless, even, and real-valued solution.
+            nodeless, even, and real-valued solution (default: False).
 
             Enabling this option requires some caution: intented for  GNSEs
             with even and real solitons, it yields catastrophic results for
