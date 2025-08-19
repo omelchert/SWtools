@@ -2,7 +2,7 @@
 
 The [SWtools](https://doi.org/10.1103/PhysRevA.110.043518) software package is described in 
 
-> N.N., ariXiv article will follow soon. 
+> O. Melchert and A. Demircan <em>SWtools: A Python module implementing iterative solvers for soliton solutions of nonlinear Schrödinger-type equations</em>, [arxiv:2504.10623](https://doi.org/10.48550/arXiv.2504.10623).
 
 The presented software has been extensively used in our research work, and has
 previously contributed to the process of scientific discovery in the field of
