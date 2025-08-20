@@ -6,7 +6,7 @@ spectral renormalization method for d=2.
 """
 import numpy as np
 import matplotlib.pyplot as plt
-from SWtools import IterBase
+from .SWtools_base import IterBase
 from mpl_toolkits.mplot3d import axes3d
 
 
