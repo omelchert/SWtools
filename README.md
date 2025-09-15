@@ -75,7 +75,7 @@ Below we provide a list of all `SWtools` modules along with a short description 
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
-- **Reference manual:** <https://doi.org/10.48550/arXiv.2504.10623>
+- **Reference manual:** <https://doi.org/10.1016/j.cpc.2025.109851>
 
 - **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>
 
