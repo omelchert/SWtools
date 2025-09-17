@@ -75,7 +75,7 @@ Below we provide a list of all `SWtools` modules along with a short description 
 
 - **Minimal example:** [https://github.com/omelchert/SWtools/blob/main/doc/minimalExample.md](doc/minimalExample.md)
 
-- **Reference manual:** <https://doi.org/10.1016/j.cpc.2025.109851>
+- **Reference manual:** O. Melchert and A. Demircan, <em>SWtools: A Python module implementing iterative solvers for soliton solutions of nonlinear Schrödinger-type equations</em>, [Comp. Phys. Commun. 317 (2025) 109851](https://doi.org/10.1016/j.cpc.2025.109851).
 
 - **Documentation:** <https://omelchert.github.io//SWtools/doc/html/SWtools_base.html>
 
